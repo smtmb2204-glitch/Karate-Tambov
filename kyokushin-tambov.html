@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Каратэ киокушин — Тамбов</title>
+<meta name="description" content="Клуб каратэ киокушин в Тамбове. Лицей № 29, ул. Степана Разина. Тренер — Семёнов Виталий Николаевич.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+:root{--bg:#f6f4f0;--surface:#ffffff;--ink:#16130f;--muted:#5d574f;--red:#b3141b;--line:#d9d4cb;--onred:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14120f;--surface:#1d1a16;--ink:#f1ede6;--muted:#b0a89b;--red:#e04047;--line:#3a352e;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14120f;--surface:#1d1a16;--ink:#f1ede6;--muted:#b0a89b;--red:#e04047;--line:#3a352e;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.6 "Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+h1,h2,h3{font-family:Oswald,"Arial Narrow",Impact,sans-serif;font-weight:700;line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:16px}
+.brand{font-family:Oswald,Impact,sans-serif;font-weight:700;font-size:20px;text-decoration:none;letter-spacing:.02em}
+.tel{font-weight:600;text-decoration:none;border-bottom:2px solid var(--red)}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;padding:48px 0 72px}
+.hero h1{font-size:clamp(44px,8vw,92px);text-transform:none}
+.hero p{max-width:34em;color:var(--muted);font-size:20px;margin:22px 0 30px}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-block;padding:14px 26px;font-weight:600;text-decoration:none;border:2px solid var(--ink);border-radius:2px}
+.btn.main{background:var(--red);border-color:var(--red);color:var(--onred)}
+.btn:hover{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.sun{aspect-ratio:1;border-radius:50%;background:var(--red);display:grid;place-items:center;color:var(--onred);max-width:360px;width:100%;justify-self:center}
+.sun span{display:block;height:70%;aspect-ratio:172/464;background:var(--onred);-webkit-mask:url(data:image/png;base64,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) center/contain no-repeat;mask:url(data:image/png;base64,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) center/contain no-repeat}
+section{padding:60px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(30px,4.5vw,46px);margin-bottom:22px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.cols p{margin:0 0 14px;max-width:38em}
+.rules{list-style:none;margin:0;padding:0}
+.rules li{padding:14px 0;border-bottom:1px solid var(--line)}
+.rules b{display:block;font-family:Oswald,sans-serif;font-size:21px;font-weight:500}
+.rules span{color:var(--muted)}
+.belts{display:flex;gap:0;margin:26px 0 8px;overflow-x:auto}
+.belts div{flex:1 0 90px;padding:34px 8px 8px;font-size:14px;font-weight:600;text-align:center;border:1px solid var(--line);border-left-width:0}
+.belts div:first-child{border-left-width:1px}
+.belts .w{background:#fff;color:#16130f}.belts .o{background:#e8802a;color:#16130f}.belts .b{background:#2c62b4;color:#fff}
+.belts .y{background:#efc531;color:#16130f}.belts .g{background:#2f8a4a;color:#fff}.belts .br{background:#6b4226;color:#fff}.belts .k{background:#111;color:#fff}
+.note{color:var(--muted);font-size:16px}
+.days{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:26px 0 12px;border:1px solid var(--line);background:var(--surface)}
+.days div{padding:26px 22px;border-left:1px solid var(--line)}
+.days div:first-child{border-left:0}
+.days b{display:block;font:700 28px/1.1 Oswald,sans-serif}
+.days span{color:var(--red);font-weight:600;font-size:22px}
+@media (max-width:760px){.days{grid-template-columns:1fr}.days div{border-left:0;border-top:1px solid var(--line)}.days div:first-child{border-top:0}}
+.coach{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+.coach .mon{width:96px;height:96px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font:700 34px Oswald,sans-serif}
+.coach h3{font-size:30px;margin-bottom:6px}
+.contact{background:var(--ink);color:var(--bg);border-top:0}
+.contact h2{color:var(--bg)}
+.contact .big{font:700 clamp(34px,7vw,64px)/1 Oswald,sans-serif;text-decoration:none;display:inline-block;margin:6px 0 22px;border-bottom:4px solid var(--red)}
+.contact p{margin:4px 0;color:inherit;opacity:.88}
+.contact .btn{border-color:var(--bg);color:var(--bg);margin-top:20px}
+.contact .btn:hover{background:var(--bg);color:var(--ink)}
+footer{padding:26px 0;color:var(--muted);font-size:15px}
+@media (max-width:760px){.hero,.cols{grid-template-columns:1fr;gap:28px}.sun{max-width:240px;order:-1;justify-self:start}.hero{padding-top:20px}.coach{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:no-preference){.sun{animation:rise .9s ease-out both}@keyframes rise{from{transform:scale(.85);opacity:0}to{transform:none;opacity:1}}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#top">Киокушин · Тамбов</a>
+    <a class="tel" href="tel:+79107581001">+7 910 758-10-01</a>
+  </header>
+
+  <div class="hero" id="top">
+    <div>
+      <h1>Каратэ киокушин в Тамбове</h1>
+      <p>Контактное каратэ для детей и взрослых: физическая подготовка, характер и уверенность в себе. Занятия проходят в лицее № 29 по понедельникам, средам и пятницам. Принимаем с 6 лет.</p>
+      <div class="btns">
+        <a class="btn main" href="tel:+79107581001">Позвонить тренеру</a>
+        <a class="btn" href="#contacts">Где занимаемся</a>
+      </div>
+    </div>
+    <div class="sun"><span role="img" aria-label="Киокушин"></span></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap cols">
+    <div>
+      <h2>Что такое киокушин</h2>
+      <p>Киокушин — стиль полноконтактного каратэ, основанный Масутацу Оямой в 1950–60-х годах в Японии. Название переводится как «высшая истина».</p>
+      <p>Здесь тренируют не только удар, но и выдержку: техника, спарринг, растяжка, общая физическая подготовка. Приветствие и благодарность в зале — «ос».</p>
+    </div>
+    <ul class="rules">
+      <li><b>Техника</b><span>Стойки, удары руками и ногами, блоки, ката.</span></li>
+      <li><b>Физическая подготовка</b><span>Сила, гибкость, выносливость, координация.</span></li>
+      <li><b>Спарринг</b><span>Работа в контакте под контролем тренера.</span></li>
+      <li><b>Дисциплина</b><span>Уважение к тренеру и партнёру, самоконтроль.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Путь от белого пояса к чёрному</h2>
+    <p class="note">Ученики растут по ступеням — кю. Цвет пояса показывает ступень.</p>
+    <div class="belts" role="list">
+      <div class="w" role="listitem">Белый</div>
+      <div class="o" role="listitem">Оранжевый</div>
+      <div class="b" role="listitem">Синий</div>
+      <div class="y" role="listitem">Жёлтый</div>
+      <div class="g" role="listitem">Зелёный</div>
+      <div class="br" role="listitem">Коричневый</div>
+      <div class="k" role="listitem">Чёрный</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Расписание</h2>
+    <div class="days">
+      <div><b>Понедельник</b><span>18:00–20:00</span></div>
+      <div><b>Среда</b><span>18:00–20:00</span></div>
+      <div><b>Пятница</b><span>18:00–20:00</span></div>
+    </div>
+    <p class="note">Принимаем детей и взрослых от 6 лет. Место: лицей № 29, улица Степана Разина.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap coach">
+    <div class="mon" aria-hidden="true">ВС</div>
+    <div>
+      <h2 style="margin-bottom:10px">Тренер</h2>
+      <h3>Семёнов Виталий Николаевич</h3>
+      <p style="margin:8px 0 0;color:var(--muted)">Ведёт занятия по каратэ киокушин в Тамбове. Чтобы записаться на пробную тренировку, позвоните по телефону.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacts">
+  <div class="wrap">
+    <h2>Записаться на тренировку</h2>
+    <a class="big" href="tel:+79107581001">+7 910 758-10-01</a>
+    <p>Лицей № 29, улица Степана Разина, Тамбов</p>
+    <p>Тренировки: понедельник, среда, пятница, 18:00–20:00. Возраст — от 6 лет.</p>
+    <a class="btn" href="https://yandex.ru/maps/?text=%D0%A2%D0%B0%D0%BC%D0%B1%D0%BE%D0%B2%2C%20%D0%BB%D0%B8%D1%86%D0%B5%D0%B9%20%E2%84%96%2029%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A1%D1%82%D0%B5%D0%BF%D0%B0%D0%BD%D0%B0%20%D0%A0%D0%B0%D0%B7%D0%B8%D0%BD%D0%B0" target="_blank" rel="noopener">Открыть на карте</a>
+  </div>
+</section>
+
+<div class="wrap"><footer>Клуб каратэ киокушин · Тамбов</footer></div>
+</body>
+</html>
